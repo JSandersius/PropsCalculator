@@ -6,9 +6,33 @@ import react from "react";
 //before anything lets retunr a span with all the props that are being 
 	//passed in to ensure everything is working properly 
 const Math = (props) => {
+	let value; 
 
-	return <span>{props.num1} {props.operator} {props.num2}</span>;
+	switch (props.operator) {
+		case "+":
+			value = props.num1 + props.num2;
+			break; 
+		case "-":
+			value = props.num1 - props.num2;
+			break;
+		case "*":
+			value = props.num1 * props.num2;
+			break;
+		case "/":
+			value = props.num1 / props.num2;	
+			break; 
+		default: 
+			value = NaN; 				
+	}
+
+	return <span>{value}</span>;
 	} 
+//now that this is all working properly, we need to do some logic 
+	//lets get to some calculations before we return a value  
+		//to do these calculations we are going to create a variable value
+			//we'll create a switch statement to run the calculation depending 
+			//on the operator and set the variable value based on that 
+				//we can then return a span with the calculated value 
 
 
 export default Math; 
