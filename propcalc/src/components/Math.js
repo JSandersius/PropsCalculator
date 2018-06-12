@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//make sure it accecpts props
 // The Math function component accepts a props argument
 const Math = (props) => {
   let value;
