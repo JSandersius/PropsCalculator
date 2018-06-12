@@ -1,6 +1,15 @@
 import React from "react";
 import Math from "./Math";
 
+
+//Create a new component named "Math"
+//Render one Math component in the place of each "?" mark
+//math should accept 3 props
+//num1, operator, and num2
+//math should return a span tag displayingthe result e.g. 19 + 341 = 360
+
+
+
 // Calculator renders the Math component 4 times with different props
 const Calculator = () => (
   <div>
