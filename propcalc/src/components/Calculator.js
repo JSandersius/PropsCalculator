@@ -5,12 +5,16 @@ import Math from "./Math";
 // Create a new component named "Math"
 // Render one Math component in the place of each "?" mark
 // Math should accept 3 props
-// num1, operator, and num2
+  // num1, operator, and num2
+    
 // Math should return a span tag displaying the result e.g.  19 + 341 = 360
 const Calculator = () => (
+  // now need to replace each ? with the math component
+    //after this we need to pass three props to the math compenent
+
   <div>
     <p>
-      19 + 341 = <Math />
+      19 + 341 = <Math /> 
     </p>
     <p>
       42 - 17 = <Math />
