@@ -1,7 +1,7 @@
 //this is going to be a react component, so we need to rememeber to import react from react
 //create our component variable and export it 
 
-import react from "react";
+import React from "react";
 //lets make sure that Math accepts props 
 //before anything lets retunr a span with all the props that are being 
 	//passed in to ensure everything is working properly 
@@ -21,8 +21,8 @@ const Math = (props) => {
 		case "/":
 			value = props.num1 / props.num2;	
 			break; 
-		default: 
-			value = NaN; 				
+		default:
+		value = NaN; 				
 	}
 
 	return <span>{value}</span>;
